@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ValorantViewModel {
+struct ValorantAgentsViewModel {
     
     var agents: [AgentModel]
     

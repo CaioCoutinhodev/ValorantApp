@@ -62,18 +62,12 @@ final class CustomCell: UITableViewCell {
     func configure(name: String, imageUrl: String?) {
         nameLabel.text = name
 
-        guard let urlString = imageUrl,
-              let url = URL(string: urlString) else { return }
-
-        DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: url),
-               let image = UIImage(data: data) {
-
-                DispatchQueue.main.async {
-                    self.agentImageView.image = image
+        Utils.configure(imageUrl: imageUrl, completion: { [weak self] image in
+                guard let image = image else {
+                    return
                 }
-            }
+                self?.agentImageView.image = image
+            })
         }
-    }
 }
 

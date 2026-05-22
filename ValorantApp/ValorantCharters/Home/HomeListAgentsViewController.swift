@@ -11,11 +11,14 @@ class HomeListAgentsViewController: UIViewController {
  
     let valorantView = HomeListAgentsView()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = valorantView
         valorantView.backgroundColor = .white
         fetchData()
+        valorantView.delegate = self
+        navigationItem.backButtonTitle = "Voltar"
 }
 
         private func fetchData() {
@@ -24,7 +27,7 @@ class HomeListAgentsViewController: UIViewController {
                 case .success(let agents):
                     
                     DispatchQueue.main.async {
-                        let viewModel = ValorantViewModel(model: agents)
+                        let viewModel = ValorantAgentsViewModel(model: agents)
                         self?.valorantView.viewModel = viewModel
                     }
                     
@@ -33,4 +36,11 @@ class HomeListAgentsViewController: UIViewController {
                 }
             }
         }
+}
+extension HomeListAgentsViewController: HomeListAgentsViewDelegate{
+    func didSelectAgent(id: String){
+        let vc = CharterPageViewController(id: id)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

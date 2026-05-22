@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747530652FB4AFAB006BAA28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747530642FB4AFAB006BAA28 /* Colors.swift */; };
+		748603092FBB92790094B29D /* AbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748603082FBB92790094B29D /* AbilityView.swift */; };
 		748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B649C2FA27F6000A534FC /* CharterPageView.swift */; };
 		748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */; };
+		7495CD792FABCED20058914C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495CD782FABCED20058914C /* Utils.swift */; };
 		74A694A92F9A8CE3006A1BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */; };
 		74A694AB2F9A8CE3006A1BBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */; };
 		74A694AD2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */; };
@@ -20,8 +23,11 @@
 		74A694DF2F9A8F45006A1BBD /* HomeListAgentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */; };
 		74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694E02F9A9257006A1BBD /* AgentModel.swift */; };
 		74A694E32F9A9610006A1BBD /* ValorantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694E22F9A9610006A1BBD /* ValorantService.swift */; };
+		74AE94802FAA5EFE00DAC537 /* ValorantAgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */; };
 		74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */; };
-		74AED7D42F9FEF7600A0AA98 /* ValorantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* ValorantViewModel.swift */; };
+		74AED7D42F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */; };
+		74BD0FE52FBF83E600237250 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0FE42FBF83E600237250 /* ModalViewModel.swift */; };
+		74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C236002FB3CB68001B047A /* CustomCellAbility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		747530642FB4AFAB006BAA28 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		748603082FBB92790094B29D /* AbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityView.swift; sourceTree = "<group>"; };
 		748B649C2FA27F6000A534FC /* CharterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageView.swift; sourceTree = "<group>"; };
 		748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewController.swift; sourceTree = "<group>"; };
+		7495CD782FABCED20058914C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		74A694A52F9A8CE3006A1BBD /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +68,11 @@
 		74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListAgentsView.swift; sourceTree = "<group>"; };
 		74A694E02F9A9257006A1BBD /* AgentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentModel.swift; sourceTree = "<group>"; };
 		74A694E22F9A9610006A1BBD /* ValorantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantService.swift; sourceTree = "<group>"; };
+		74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAgentViewModel.swift; sourceTree = "<group>"; };
 		74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		74AED7D32F9FEF7600A0AA98 /* ValorantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantViewModel.swift; sourceTree = "<group>"; };
+		74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAgentsViewModel.swift; sourceTree = "<group>"; };
+		74BD0FE42FBF83E600237250 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		74C236002FB3CB68001B047A /* CustomCellAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellAbility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +103,9 @@
 		748B649E2FA27F6D00A534FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */,
+				74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */,
 				74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */,
+				74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -100,10 +113,19 @@
 		748B649F2FA27F8400A534FC /* CharterPage */ = {
 			isa = PBXGroup;
 			children = (
+				74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */,
 				748B649C2FA27F6000A534FC /* CharterPageView.swift */,
 				748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */,
 			);
 			path = CharterPage;
+			sourceTree = "<group>";
+		};
+		7495CD7A2FABCED80058914C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7495CD782FABCED20058914C /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		74A6949C2F9A8CE3006A1BBD = {
@@ -129,7 +151,7 @@
 		74A694A72F9A8CE3006A1BBD /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
-				74A694DD2F9A8F01006A1BBD /* ValorantHome */,
+				74A694DD2F9A8F01006A1BBD /* ValorantCharters */,
 				74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */,
 				74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */,
 				74A694B42F9A8CEA006A1BBD /* Assets.xcassets */,
@@ -156,17 +178,37 @@
 			path = ValorantAppUITests;
 			sourceTree = "<group>";
 		};
-		74A694DD2F9A8F01006A1BBD /* ValorantHome */ = {
+		74A694DD2F9A8F01006A1BBD /* ValorantCharters */ = {
 			isa = PBXGroup;
 			children = (
-				74AED7D32F9FEF7600A0AA98 /* ValorantViewModel.swift */,
-				74A694E02F9A9257006A1BBD /* AgentModel.swift */,
-				74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */,
+				74AE94812FAA5F0700DAC537 /* ModalAbility */,
+				7495CD7A2FABCED80058914C /* Utils */,
+				74C236022FB3CBBE001B047A /* CustomCell */,
 				74A694E22F9A9610006A1BBD /* ValorantService.swift */,
 				748B649E2FA27F6D00A534FC /* Home */,
 				748B649F2FA27F8400A534FC /* CharterPage */,
+				747530642FB4AFAB006BAA28 /* Colors.swift */,
 			);
-			path = ValorantHome;
+			path = ValorantCharters;
+			sourceTree = "<group>";
+		};
+		74AE94812FAA5F0700DAC537 /* ModalAbility */ = {
+			isa = PBXGroup;
+			children = (
+				74BD0FE42FBF83E600237250 /* ModalViewModel.swift */,
+				748603082FBB92790094B29D /* AbilityView.swift */,
+			);
+			path = ModalAbility;
+			sourceTree = "<group>";
+		};
+		74C236022FB3CBBE001B047A /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */,
+				74C236002FB3CB68001B047A /* CustomCellAbility.swift */,
+				74A694E02F9A9257006A1BBD /* AgentModel.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,15 +341,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A694DF2F9A8F45006A1BBD /* HomeListAgentsView.swift in Sources */,
+				747530652FB4AFAB006BAA28 /* Colors.swift in Sources */,
+				74AE94802FAA5EFE00DAC537 /* ValorantAgentViewModel.swift in Sources */,
 				74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */,
 				74A694E32F9A9610006A1BBD /* ValorantService.swift in Sources */,
+				748603092FBB92790094B29D /* AbilityView.swift in Sources */,
 				74A694B32F9A8CE4006A1BBD /* ValorantApp.xcdatamodeld in Sources */,
+				7495CD792FABCED20058914C /* Utils.swift in Sources */,
 				74A694AD2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift in Sources */,
 				74A694A92F9A8CE3006A1BBD /* AppDelegate.swift in Sources */,
 				74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */,
 				74A694AB2F9A8CE3006A1BBD /* SceneDelegate.swift in Sources */,
-				74AED7D42F9FEF7600A0AA98 /* ValorantViewModel.swift in Sources */,
+				74AED7D42F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift in Sources */,
+				74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */,
 				748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */,
+				74BD0FE52FBF83E600237250 /* ModalViewModel.swift in Sources */,
 				748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ final class ValorantService {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         
-        request(request: urlRequest, completion: { (result: Result<AgentsUnwrapperModel, Error>) in
+        request(request: urlRequest, completion: { (result: Result<UnwrapperModel<[AgentModel]>, Error>) in
             switch result {
             case .success(let model):
                 completion(.success(model.data))
@@ -38,10 +38,27 @@ final class ValorantService {
         })
     }
     
-    
-//    func fetchUser(id: Int, completion: @escaping (Result<CharterModel, Error>) -> Void) {
-//        let request = URLRequest(url: <#T##URL#>)
-//    }
+    func fetchUser(agentID: String, completion: @escaping (Result<CompleteAgentModel, Error>) -> Void) {
+        var components = URLComponents(string: "https://valorant-api.com/v1/agents/\(agentID)")
+
+        components?.queryItems = [
+            URLQueryItem(name: "language", value: "pt-BR")
+        ]
+        
+        guard let url = components?.url else { return }
+
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        
+        request(request: urlRequest, completion: { (result: Result<UnwrapperModel<CompleteAgentModel>, Error>) in
+            switch result {
+            case .success(let model):
+                completion(.success(model.data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        })
+    }
 
     func request<T: Decodable>(request: URLRequest, completion: @escaping (Result<T, Error>) -> Void) {
         URLSession.shared.dataTask(with: request) { data, _, error in

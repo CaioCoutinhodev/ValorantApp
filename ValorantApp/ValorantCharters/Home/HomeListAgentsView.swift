@@ -7,13 +7,19 @@
 
 import UIKit
 
+protocol HomeListAgentsViewDelegate: AnyObject {
+    func didSelectAgent(id: String)
+}
+
 class HomeListAgentsView: UIView {
     
-    var viewModel: ValorantViewModel? {
+    var viewModel: ValorantAgentsViewModel? {
         didSet {
             setupViewData()
         }
     }
+    
+    weak var delegate: HomeListAgentsViewDelegate?
     
     private func setupViewData() {
         tableView.reloadData()
@@ -28,7 +34,7 @@ class HomeListAgentsView: UIView {
     }()
     
     let searchBar: UISearchBar = {
-        let search = UISearchBar(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
+        let search = UISearchBar(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
         search.searchTextField.attributedPlaceholder = NSAttributedString(
             string: "pesquisar"
         )
@@ -52,8 +58,8 @@ class HomeListAgentsView: UIView {
         tableView.register(CustomCell.self, forCellReuseIdentifier: CustomCell.identifier)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init() {
+        super.init(frame: .zero)
         setupView()
         searchBar.delegate = self
     }
@@ -68,7 +74,6 @@ class HomeListAgentsView: UIView {
         addSubview(tableView)
         addSubview(chartersTitle)
         tableView.tableHeaderView = searchBar
-        
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -105,6 +110,7 @@ extension HomeListAgentsView: UITableViewDataSource, UITableViewDelegate {
                 return UITableViewCell()
             }
         
+        
          let agent = agents[indexPath.row]
         
         cell.configure(name: agent.displayName, imageUrl: agent.displayIcon)
@@ -117,7 +123,9 @@ extension HomeListAgentsView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        let agents = isSearched ? filteredCharters : (viewModel?.agents ?? [])
+        
+        delegate?.didSelectAgent(id: agents[indexPath.row].uuid)
     }
 }
 
