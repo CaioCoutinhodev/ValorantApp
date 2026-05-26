@@ -10,13 +10,14 @@ import UIKit
 
 final class CustomCell: UITableViewCell {
 
-    static let identifier = "AgentCell"
+    static let identifier = "Cell"
 
     private let agentImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
         image.layer.cornerRadius = 8
+        image.contentMode = .scaleAspectFit
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()

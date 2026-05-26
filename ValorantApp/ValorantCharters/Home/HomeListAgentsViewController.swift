@@ -9,7 +9,7 @@ import UIKit
 
 class HomeListAgentsViewController: UIViewController {
  
-    let valorantView = HomeListAgentsView()
+    let valorantView = HomeListAgentsView(title: "Personagens")
     
     
     override func viewDidLoad() {

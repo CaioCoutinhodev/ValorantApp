@@ -13,7 +13,6 @@ protocol CharterPageViewDelegate: AnyObject {
 
 class CharterPageView: UIView {
     
-    
     var viewModel: ValorantAgentViewModel? {
         didSet {
             setupData()

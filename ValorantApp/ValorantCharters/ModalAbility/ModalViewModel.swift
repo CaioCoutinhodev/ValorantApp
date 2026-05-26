@@ -14,5 +14,4 @@ struct ModalViewModel {
     init(model: Abilities) {
         ability = model
     }
-    
 }
