@@ -8,35 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		747530652FB4AFAB006BAA28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747530642FB4AFAB006BAA28 /* Colors.swift */; };
-		748603092FBB92790094B29D /* AbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748603082FBB92790094B29D /* AbilityView.swift */; };
+		748603092FBB92790094B29D /* ModalAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748603082FBB92790094B29D /* ModalAbilityView.swift */; };
 		748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B649C2FA27F6000A534FC /* CharterPageView.swift */; };
 		748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */; };
 		7495CD792FABCED20058914C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495CD782FABCED20058914C /* Utils.swift */; };
+		74987C2B2FD740BB005ADF70 /* SkinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74987C2A2FD740BB005ADF70 /* SkinListViewController.swift */; };
 		74A694A92F9A8CE3006A1BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */; };
 		74A694AB2F9A8CE3006A1BBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */; };
-		74A694AD2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */; };
+		74A694AD2F9A8CE3006A1BBD /* AgentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694AC2F9A8CE3006A1BBD /* AgentListViewController.swift */; };
 		74A694B32F9A8CE4006A1BBD /* ValorantApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74A694B12F9A8CE4006A1BBD /* ValorantApp.xcdatamodeld */; };
 		74A694B52F9A8CEA006A1BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A694B42F9A8CEA006A1BBD /* Assets.xcassets */; };
 		74A694C32F9A8CEB006A1BBD /* ValorantAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694C22F9A8CEB006A1BBD /* ValorantAppTests.swift */; };
 		74A694CD2F9A8CEB006A1BBD /* ValorantAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694CC2F9A8CEB006A1BBD /* ValorantAppUITests.swift */; };
 		74A694CF2F9A8CEB006A1BBD /* ValorantAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694CE2F9A8CEB006A1BBD /* ValorantAppUITestsLaunchTests.swift */; };
-		74A694DF2F9A8F45006A1BBD /* HomeListAgentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */; };
+		74A694DF2F9A8F45006A1BBD /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694DE2F9A8F45006A1BBD /* SelectListView.swift */; };
 		74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694E02F9A9257006A1BBD /* AgentModel.swift */; };
 		74A694E32F9A9610006A1BBD /* ValorantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694E22F9A9610006A1BBD /* ValorantService.swift */; };
 		74A8AA0E2FC0D9BF00B5B92F /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA0D2FC0D9BF00B5B92F /* HomePageView.swift */; };
 		74A8AA102FC0D9D400B5B92F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA0F2FC0D9D400B5B92F /* HomePageViewController.swift */; };
-		74A8AA132FC0E76C00B5B92F /* HomeWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA122FC0E76C00B5B92F /* HomeWeaponsView.swift */; };
-		74A8AA152FC0E78400B5B92F /* HomeWeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA142FC0E78400B5B92F /* HomeWeaponsViewController.swift */; };
-		74A8AA192FC0E97300B5B92F /* WeaponsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA182FC0E97300B5B92F /* WeaponsModel.swift */; };
-		74A8AA1B2FC0EBDF00B5B92F /* HomeWeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA1A2FC0EBDF00B5B92F /* HomeWeaponsViewModel.swift */; };
-		74A8AA1E2FC0ED9A00B5B92F /* WeaponsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA1D2FC0ED9A00B5B92F /* WeaponsService.swift */; };
-		74AE94802FAA5EFE00DAC537 /* ValorantAgentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */; };
+		74A8AA152FC0E78400B5B92F /* WeaponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA142FC0E78400B5B92F /* WeaponListViewController.swift */; };
+		74A8AA192FC0E97300B5B92F /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA182FC0E97300B5B92F /* WeaponModel.swift */; };
+		74A8AA1B2FC0EBDF00B5B92F /* WeaponListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA1A2FC0EBDF00B5B92F /* WeaponListViewModel.swift */; };
+		74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */; };
 		74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */; };
-		74AED7D42F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */; };
-		74BD0FE52FBF83E600237250 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0FE42FBF83E600237250 /* ModalViewModel.swift */; };
+		74AED7D42F9FEF7600A0AA98 /* SelectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */; };
+		74BD0FE52FBF83E600237250 /* ModalAbilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */; };
+		74C1B3412FD0A3DD004199DF /* WeaponPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */; };
 		74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C236002FB3CB68001B047A /* CustomCellAbility.swift */; };
 		74D200642FC4BFAE00AB6BCD /* WeaponsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */; };
-		74D200662FC4BFC600AB6BCD /* WeaponsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D200652FC4BFC600AB6BCD /* WeaponsPageView.swift */; };
 		74D200682FC4C21200AB6BCD /* WeaponPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D200672FC4C21200AB6BCD /* WeaponPageViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,14 +58,15 @@
 
 /* Begin PBXFileReference section */
 		747530642FB4AFAB006BAA28 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		748603082FBB92790094B29D /* AbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityView.swift; sourceTree = "<group>"; };
+		748603082FBB92790094B29D /* ModalAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAbilityView.swift; sourceTree = "<group>"; };
 		748B649C2FA27F6000A534FC /* CharterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageView.swift; sourceTree = "<group>"; };
 		748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewController.swift; sourceTree = "<group>"; };
 		7495CD782FABCED20058914C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		74987C2A2FD740BB005ADF70 /* SkinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinListViewController.swift; sourceTree = "<group>"; };
 		74A694A52F9A8CE3006A1BBD /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListAgentsViewController.swift; sourceTree = "<group>"; };
+		74A694AC2F9A8CE3006A1BBD /* AgentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListViewController.swift; sourceTree = "<group>"; };
 		74A694B22F9A8CE4006A1BBD /* ValorantApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ValorantApp.xcdatamodel; sourceTree = "<group>"; };
 		74A694B42F9A8CEA006A1BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A694B92F9A8CEA006A1BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,23 +75,21 @@
 		74A694C82F9A8CEB006A1BBD /* ValorantAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValorantAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A694CC2F9A8CEB006A1BBD /* ValorantAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAppUITests.swift; sourceTree = "<group>"; };
 		74A694CE2F9A8CEB006A1BBD /* ValorantAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListAgentsView.swift; sourceTree = "<group>"; };
+		74A694DE2F9A8F45006A1BBD /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
 		74A694E02F9A9257006A1BBD /* AgentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentModel.swift; sourceTree = "<group>"; };
 		74A694E22F9A9610006A1BBD /* ValorantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantService.swift; sourceTree = "<group>"; };
 		74A8AA0D2FC0D9BF00B5B92F /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		74A8AA0F2FC0D9D400B5B92F /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		74A8AA122FC0E76C00B5B92F /* HomeWeaponsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeaponsView.swift; sourceTree = "<group>"; };
-		74A8AA142FC0E78400B5B92F /* HomeWeaponsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeaponsViewController.swift; sourceTree = "<group>"; };
-		74A8AA182FC0E97300B5B92F /* WeaponsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsModel.swift; sourceTree = "<group>"; };
-		74A8AA1A2FC0EBDF00B5B92F /* HomeWeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeaponsViewModel.swift; sourceTree = "<group>"; };
-		74A8AA1D2FC0ED9A00B5B92F /* WeaponsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsService.swift; sourceTree = "<group>"; };
-		74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAgentViewModel.swift; sourceTree = "<group>"; };
+		74A8AA142FC0E78400B5B92F /* WeaponListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListViewController.swift; sourceTree = "<group>"; };
+		74A8AA182FC0E97300B5B92F /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		74A8AA1A2FC0EBDF00B5B92F /* WeaponListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListViewModel.swift; sourceTree = "<group>"; };
+		74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewModel.swift; sourceTree = "<group>"; };
 		74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantAgentsViewModel.swift; sourceTree = "<group>"; };
-		74BD0FE42FBF83E600237250 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
+		74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListViewModel.swift; sourceTree = "<group>"; };
+		74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAbilityViewModel.swift; sourceTree = "<group>"; };
+		74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPagerView.swift; sourceTree = "<group>"; };
 		74C236002FB3CB68001B047A /* CustomCellAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellAbility.swift; sourceTree = "<group>"; };
 		74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsPageViewController.swift; sourceTree = "<group>"; };
-		74D200652FC4BFC600AB6BCD /* WeaponsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsPageView.swift; sourceTree = "<group>"; };
 		74D200672FC4C21200AB6BCD /* WeaponPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,9 +121,7 @@
 		748B649E2FA27F6D00A534FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				74AED7D32F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift */,
-				74A694DE2F9A8F45006A1BBD /* HomeListAgentsView.swift */,
-				74A694AC2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift */,
+				74A694AC2F9A8CE3006A1BBD /* AgentListViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -133,7 +129,7 @@
 		748B649F2FA27F8400A534FC /* CharterPage */ = {
 			isa = PBXGroup;
 			children = (
-				74AE947F2FAA5EFE00DAC537 /* ValorantAgentViewModel.swift */,
+				74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */,
 				748B649C2FA27F6000A534FC /* CharterPageView.swift */,
 				748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */,
 			);
@@ -146,6 +142,14 @@
 				7495CD782FABCED20058914C /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		74987C292FD74087005ADF70 /* Skins */ = {
+			isa = PBXGroup;
+			children = (
+				74987C2A2FD740BB005ADF70 /* SkinListViewController.swift */,
+			);
+			path = Skins;
 			sourceTree = "<group>";
 		};
 		74A6949C2F9A8CE3006A1BBD = {
@@ -171,9 +175,10 @@
 		74A694A72F9A8CE3006A1BBD /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
-				74A8AA112FC0E72B00B5B92F /* Valorantweapons */,
-				74A8AA0B2FC0D92E00B5B92F /* HomePage */,
-				74A694DD2F9A8F01006A1BBD /* ValorantCharters */,
+				7495CD7A2FABCED80058914C /* Utils */,
+				74A8AA172FC0E95200B5B92F /* Models */,
+				74B023892FE1DA1A00051608 /* Services */,
+				74FC5C012FCE128900AC8395 /* Feature */,
 				74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */,
 				74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */,
 				74A694B42F9A8CEA006A1BBD /* Assets.xcassets */,
@@ -200,73 +205,68 @@
 			path = ValorantAppUITests;
 			sourceTree = "<group>";
 		};
-		74A694DD2F9A8F01006A1BBD /* ValorantCharters */ = {
+		74A694DD2F9A8F01006A1BBD /* Charters */ = {
 			isa = PBXGroup;
 			children = (
 				74AE94812FAA5F0700DAC537 /* ModalAbility */,
-				7495CD7A2FABCED80058914C /* Utils */,
-				74C236022FB3CBBE001B047A /* CustomCell */,
-				74A694E22F9A9610006A1BBD /* ValorantService.swift */,
 				748B649E2FA27F6D00A534FC /* Home */,
 				748B649F2FA27F8400A534FC /* CharterPage */,
 				747530642FB4AFAB006BAA28 /* Colors.swift */,
 			);
-			path = ValorantCharters;
+			path = Charters;
 			sourceTree = "<group>";
 		};
-		74A8AA0B2FC0D92E00B5B92F /* HomePage */ = {
+		74A8AA0B2FC0D92E00B5B92F /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				74A8AA0D2FC0D9BF00B5B92F /* HomePageView.swift */,
 				74A8AA0F2FC0D9D400B5B92F /* HomePageViewController.swift */,
 			);
-			path = HomePage;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		74A8AA112FC0E72B00B5B92F /* Valorantweapons */ = {
+		74A8AA112FC0E72B00B5B92F /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
 				74D200622FC4BF8100AB6BCD /* WeaponsPage */,
-				74A8AA1C2FC0ED7B00B5B92F /* WeaponsService */,
-				74A8AA172FC0E95200B5B92F /* Model */,
 				74A8AA162FC0E94A00B5B92F /* Home */,
-				74A8AA122FC0E76C00B5B92F /* HomeWeaponsView.swift */,
-				74A8AA142FC0E78400B5B92F /* HomeWeaponsViewController.swift */,
 			);
-			path = Valorantweapons;
+			path = Weapons;
 			sourceTree = "<group>";
 		};
 		74A8AA162FC0E94A00B5B92F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				74A8AA1A2FC0EBDF00B5B92F /* HomeWeaponsViewModel.swift */,
+				74A8AA142FC0E78400B5B92F /* WeaponListViewController.swift */,
+				74A8AA1A2FC0EBDF00B5B92F /* WeaponListViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		74A8AA172FC0E95200B5B92F /* Model */ = {
+		74A8AA172FC0E95200B5B92F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				74A8AA182FC0E97300B5B92F /* WeaponsModel.swift */,
+				74A694E02F9A9257006A1BBD /* AgentModel.swift */,
+				74A8AA182FC0E97300B5B92F /* WeaponModel.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		74A8AA1C2FC0ED7B00B5B92F /* WeaponsService */ = {
-			isa = PBXGroup;
-			children = (
-				74A8AA1D2FC0ED9A00B5B92F /* WeaponsService.swift */,
-			);
-			path = WeaponsService;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		74AE94812FAA5F0700DAC537 /* ModalAbility */ = {
 			isa = PBXGroup;
 			children = (
-				74BD0FE42FBF83E600237250 /* ModalViewModel.swift */,
-				748603082FBB92790094B29D /* AbilityView.swift */,
+				74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */,
+				748603082FBB92790094B29D /* ModalAbilityView.swift */,
 			);
 			path = ModalAbility;
+			sourceTree = "<group>";
+		};
+		74B023892FE1DA1A00051608 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74A694E22F9A9610006A1BBD /* ValorantService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		74C236022FB3CBBE001B047A /* CustomCell */ = {
@@ -274,7 +274,6 @@
 			children = (
 				74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */,
 				74C236002FB3CB68001B047A /* CustomCellAbility.swift */,
-				74A694E02F9A9257006A1BBD /* AgentModel.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -283,10 +282,40 @@
 			isa = PBXGroup;
 			children = (
 				74D200672FC4C21200AB6BCD /* WeaponPageViewModel.swift */,
-				74D200652FC4BFC600AB6BCD /* WeaponsPageView.swift */,
+				74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */,
 				74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */,
 			);
 			path = WeaponsPage;
+			sourceTree = "<group>";
+		};
+		74FC5BFF2FCE121800AC8395 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				74C236022FB3CBBE001B047A /* CustomCell */,
+				74FC5C002FCE122100AC8395 /* SelectList */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		74FC5C002FCE122100AC8395 /* SelectList */ = {
+			isa = PBXGroup;
+			children = (
+				74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */,
+				74A694DE2F9A8F45006A1BBD /* SelectListView.swift */,
+			);
+			path = SelectList;
+			sourceTree = "<group>";
+		};
+		74FC5C012FCE128900AC8395 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				74FC5BFF2FCE121800AC8395 /* Shared */,
+				74A8AA112FC0E72B00B5B92F /* Weapons */,
+				74A8AA0B2FC0D92E00B5B92F /* Home */,
+				74987C292FD74087005ADF70 /* Skins */,
+				74A694DD2F9A8F01006A1BBD /* Charters */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,31 +447,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A694DF2F9A8F45006A1BBD /* HomeListAgentsView.swift in Sources */,
+				74C1B3412FD0A3DD004199DF /* WeaponPagerView.swift in Sources */,
+				74A694DF2F9A8F45006A1BBD /* SelectListView.swift in Sources */,
 				747530652FB4AFAB006BAA28 /* Colors.swift in Sources */,
-				74AE94802FAA5EFE00DAC537 /* ValorantAgentViewModel.swift in Sources */,
+				74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */,
 				74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */,
 				74A694E32F9A9610006A1BBD /* ValorantService.swift in Sources */,
-				748603092FBB92790094B29D /* AbilityView.swift in Sources */,
+				748603092FBB92790094B29D /* ModalAbilityView.swift in Sources */,
 				74D200642FC4BFAE00AB6BCD /* WeaponsPageViewController.swift in Sources */,
-				74D200662FC4BFC600AB6BCD /* WeaponsPageView.swift in Sources */,
 				74A694B32F9A8CE4006A1BBD /* ValorantApp.xcdatamodeld in Sources */,
-				74A8AA192FC0E97300B5B92F /* WeaponsModel.swift in Sources */,
+				74A8AA192FC0E97300B5B92F /* WeaponModel.swift in Sources */,
 				7495CD792FABCED20058914C /* Utils.swift in Sources */,
-				74A694AD2F9A8CE3006A1BBD /* HomeListAgentsViewController.swift in Sources */,
-				74A8AA132FC0E76C00B5B92F /* HomeWeaponsView.swift in Sources */,
+				74A694AD2F9A8CE3006A1BBD /* AgentListViewController.swift in Sources */,
 				74A694A92F9A8CE3006A1BBD /* AppDelegate.swift in Sources */,
 				74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */,
-				74A8AA1E2FC0ED9A00B5B92F /* WeaponsService.swift in Sources */,
 				74A694AB2F9A8CE3006A1BBD /* SceneDelegate.swift in Sources */,
-				74AED7D42F9FEF7600A0AA98 /* ValorantAgentsViewModel.swift in Sources */,
+				74AED7D42F9FEF7600A0AA98 /* SelectListViewModel.swift in Sources */,
 				74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */,
 				748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */,
-				74BD0FE52FBF83E600237250 /* ModalViewModel.swift in Sources */,
+				74987C2B2FD740BB005ADF70 /* SkinListViewController.swift in Sources */,
+				74BD0FE52FBF83E600237250 /* ModalAbilityViewModel.swift in Sources */,
 				74A8AA0E2FC0D9BF00B5B92F /* HomePageView.swift in Sources */,
 				74D200682FC4C21200AB6BCD /* WeaponPageViewModel.swift in Sources */,
-				74A8AA1B2FC0EBDF00B5B92F /* HomeWeaponsViewModel.swift in Sources */,
-				74A8AA152FC0E78400B5B92F /* HomeWeaponsViewController.swift in Sources */,
+				74A8AA1B2FC0EBDF00B5B92F /* WeaponListViewModel.swift in Sources */,
+				74A8AA152FC0E78400B5B92F /* WeaponListViewController.swift in Sources */,
 				748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */,
 				74A8AA102FC0D9D400B5B92F /* HomePageViewController.swift in Sources */,
 			);
