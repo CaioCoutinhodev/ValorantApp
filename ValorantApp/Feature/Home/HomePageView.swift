@@ -14,12 +14,6 @@ protocol HomePageViewDelegate: AnyObject {
 
 class HomePageView: UIView {
     
-    var colorRed = UIColor(
-        red: 255.0 / 255.0,
-        green: 70.0 / 255.0,
-        blue: 84.0 / 255.0,
-        alpha: 1.0
-    )
 
     weak var delegate: HomePageViewDelegate?
     
@@ -27,12 +21,7 @@ class HomePageView: UIView {
         var text = UILabel()
         text.text = "Valorant App"
         text.font = UIFont.boldSystemFont(ofSize: 30)
-        text.textColor = UIColor(
-            red: 255.0 / 255.0,
-            green: 70.0 / 255.0,
-            blue: 84.0 / 255.0,
-            alpha: 1.0
-        )
+        text.textColor = Utils.AppColors.colorRed
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
@@ -40,15 +29,11 @@ class HomePageView: UIView {
     var chartersButtom: UIButton = {
         var butom = UIButton()
         butom.setTitle("Personagens", for: .normal)
-        butom.backgroundColor = UIColor(
-            red: 255.0 / 255.0,
-            green: 70.0 / 255.0,
-            blue: 84.0 / 255.0,
-            alpha: 1.0
-        )
+        butom.backgroundColor = Utils.AppColors.colorRed
         butom.titleLabel?.font = .systemFont(ofSize: 26)
         butom.setTitleColor(.black, for: .normal)
         butom.layer.borderWidth = 1
+        butom.layer.cornerRadius = 12
         butom.translatesAutoresizingMaskIntoConstraints = false
         return butom
     }()
@@ -57,14 +42,10 @@ class HomePageView: UIView {
         var butom = UIButton()
         butom.setTitle("Armas", for: .normal)
         butom.titleLabel?.font = .systemFont(ofSize: 26)
-        butom.backgroundColor = UIColor(
-            red: 255.0 / 255.0,
-            green: 70.0 / 255.0,
-            blue: 84.0 / 255.0,
-            alpha: 1.0
-        )
+        butom.backgroundColor = Utils.AppColors.colorRed
         butom.setTitleColor(.black, for: .normal)
         butom.layer.borderWidth = 1
+        butom.layer.cornerRadius = 12
         butom.translatesAutoresizingMaskIntoConstraints = false
         return butom
     }()
@@ -96,7 +77,7 @@ class HomePageView: UIView {
         
         NSLayoutConstraint.activate([
             
-            titleHome.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
+            titleHome.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 25),
             titleHome.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             
             chartersButtom.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),

@@ -10,6 +10,15 @@ import UIKit
 
 class Utils {
     
+    struct AppColors {
+       static let colorRed = UIColor(
+            red: 255.0 / 255.0,
+            green: 70.0 / 255.0,
+            blue: 84.0 / 255.0,
+            alpha: 1.0
+        )
+    }
+    
     static func configure( imageUrl: String?, completion: @escaping (UIImage?) -> Void) {
 
         guard let urlString = imageUrl,
