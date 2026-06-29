@@ -15,7 +15,7 @@ class SkinListViewController: UITableViewController {
         super.viewDidLoad()
         self.view = skinView
         
-        skinView.backgroundColor = .white
+        skinView.backgroundColor = Utils.AppColors.BackgroundColor
         skinView.delegate = self
     }
     

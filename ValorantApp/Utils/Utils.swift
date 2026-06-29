@@ -11,12 +11,26 @@ import UIKit
 class Utils {
     
     struct AppColors {
-       static let colorRed = UIColor(
-            red: 255.0 / 255.0,
-            green: 70.0 / 255.0,
-            blue: 84.0 / 255.0,
-            alpha: 1.0
-        )
+        static var colorAbility: UIColor {
+                guard let color = UIColor(named: "AbilityColor") else {
+                    fatalError("Cor 'colorAbility' não encontrada")
+                }
+                return color
+            }
+        
+        static var primaryColor: UIColor {
+                guard let color = UIColor(named: "PrimaryColor") else {
+                    fatalError("Cor 'primaryColor' não encontrada")
+                }
+                return color
+            }
+        
+        static var BackgroundColor: UIColor {
+                guard let color = UIColor(named: "BackgroundColor") else {
+                    fatalError("Cor 'BackgroundColor' não encontrada")
+                }
+                return color
+            }
     }
     
     static func configure( imageUrl: String?, completion: @escaping (UIImage?) -> Void) {

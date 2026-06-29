@@ -16,9 +16,8 @@ class WeaponsPageViewController: UIViewController {
         super.viewDidLoad()
 
         self.view = weaponPageView
-        weaponPageView.backgroundColor = .white
+        weaponPageView.backgroundColor = Utils.AppColors.BackgroundColor
         weaponPageView.delegate = self
-        
     }
     
     init(id: String) {
@@ -40,6 +39,7 @@ class WeaponsPageViewController: UIViewController {
                     
                     let viewModel = WeaponPageViewModel(model: weapon)
                     self?.weaponPageView.viewModel = viewModel
+                    self?.navigationItem.backButtonTitle = weapon.displayName
                 }
                 
             case .failure(let error):

@@ -14,11 +14,9 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = homePageView
-        homePageView.backgroundColor = .white
+        homePageView.backgroundColor = Utils.AppColors.BackgroundColor
         homePageView.delegate = self
-        navigationItem.backButtonTitle = "Voltar"
-        
-        
+        navigationItem.backButtonTitle = homePageView.titleHome.text
     }
 }
 

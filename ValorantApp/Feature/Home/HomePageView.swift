@@ -20,34 +20,24 @@ class HomePageView: UIView {
     var titleHome: UILabel = {
         var text = UILabel()
         text.text = "Valorant App"
-        text.font = UIFont.boldSystemFont(ofSize: 30)
-        text.textColor = Utils.AppColors.colorRed
+        text.font = UIFont(name: "VALORANT-Regular", size: 40)
+        text.textColor = Utils.AppColors.primaryColor
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
     
-    var chartersButtom: UIButton = {
-        var butom = UIButton()
-        butom.setTitle("Personagens", for: .normal)
-        butom.backgroundColor = Utils.AppColors.colorRed
-        butom.titleLabel?.font = .systemFont(ofSize: 26)
-        butom.setTitleColor(.black, for: .normal)
-        butom.layer.borderWidth = 1
-        butom.layer.cornerRadius = 12
-        butom.translatesAutoresizingMaskIntoConstraints = false
-        return butom
+    var chartersButtom: MenuButtom = {
+        var button = MenuButtom()
+        button.setTitle("Personagens", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
-    var weaponsButtom: UIButton = {
-        var butom = UIButton()
-        butom.setTitle("Armas", for: .normal)
-        butom.titleLabel?.font = .systemFont(ofSize: 26)
-        butom.backgroundColor = Utils.AppColors.colorRed
-        butom.setTitleColor(.black, for: .normal)
-        butom.layer.borderWidth = 1
-        butom.layer.cornerRadius = 12
-        butom.translatesAutoresizingMaskIntoConstraints = false
-        return butom
+    var weaponsButtom: MenuButtom = {
+        var button = MenuButtom()
+        button.setTitle("Armas", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     init() {

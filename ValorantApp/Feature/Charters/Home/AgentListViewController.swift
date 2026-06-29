@@ -15,10 +15,10 @@ class AgentListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = valorantView
-        valorantView.backgroundColor = .white
+        valorantView.backgroundColor = Utils.AppColors.BackgroundColor
         fetchData()
         valorantView.delegate = self
-        navigationItem.backButtonTitle = "Voltar"
+        navigationItem.backButtonTitle = valorantView.title.text
 }
 
         private func fetchData() {

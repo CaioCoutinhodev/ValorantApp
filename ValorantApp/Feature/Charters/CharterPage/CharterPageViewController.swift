@@ -16,7 +16,7 @@ class CharterPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = charterPageView
-        charterPageView.backgroundColor = .white
+        charterPageView.backgroundColor = Utils.AppColors.BackgroundColor
         charterPageView.delegate = self
         
     }
@@ -35,6 +35,7 @@ class CharterPageViewController: UIViewController {
                 DispatchQueue.main.async {
                     let viewModel = CharterPageViewModel(model: agent)
                     self?.charterPageView.viewModel = viewModel
+                    self?.navigationItem.backButtonTitle = agent.displayName
                 }
                 
             case .failure(let error):

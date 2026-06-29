@@ -24,7 +24,7 @@ class ModalAbilityView: UIViewController {
     
     override func viewDidLoad() {
             super.viewDidLoad()
-            view.backgroundColor = .white
+            view.backgroundColor = Utils.AppColors.BackgroundColor
             configuration()
             setupUI()
         backButtom.addTarget(
@@ -35,17 +35,17 @@ class ModalAbilityView: UIViewController {
         }
     
     var backButtom: UIButton = {
-        var butom = UIButton()
-        butom.setTitle("X", for: .normal)
-        butom.titleLabel?.font = .systemFont(ofSize: 24)
-        butom.setTitleColor(.black, for: .normal)
-        butom.translatesAutoresizingMaskIntoConstraints = false
-        return butom
+        var button = UIButton()
+        button.setTitle("X", for: .normal)
+        button.setTitleColor(Utils.AppColors.colorAbility, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 24)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     var nameAbility: UILabel = {
         var label = UILabel()
-        label.font = .systemFont(ofSize: 15)
+        label.font = .systemFont(ofSize: 25)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -60,7 +60,7 @@ class ModalAbilityView: UIViewController {
     
     var imageAbility: UIImageView = {
         var image = UIImageView()
-        image.tintColor = .black
+        image.tintColor = UIColor(named: "AbilityColor")
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -78,7 +78,7 @@ class ModalAbilityView: UIViewController {
                     return
                 }
 
-                self?.imageAbility.image = image.withTintColor(.black, renderingMode: .alwaysOriginal)
+                self?.imageAbility.image = image.withTintColor(Utils.AppColors.colorAbility, renderingMode: .alwaysOriginal)
             }
         )
         self.nameAbility.text = viewModel.ability.displayName

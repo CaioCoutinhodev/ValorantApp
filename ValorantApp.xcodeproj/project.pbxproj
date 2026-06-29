@@ -32,11 +32,13 @@
 		74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */; };
 		74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */; };
 		74AED7D42F9FEF7600A0AA98 /* SelectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */; };
+		74AF6D172FE9E6A80098B7AA /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74AF6D162FE9E6A70098B7AA /* Valorant Font.ttf */; };
 		74BD0FE52FBF83E600237250 /* ModalAbilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */; };
 		74C1B3412FD0A3DD004199DF /* WeaponPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */; };
 		74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C236002FB3CB68001B047A /* CustomCellAbility.swift */; };
 		74D200642FC4BFAE00AB6BCD /* WeaponsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */; };
 		74D200682FC4C21200AB6BCD /* WeaponPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D200672FC4C21200AB6BCD /* WeaponPageViewModel.swift */; };
+		74EC2F982FE9ECD000333732 /* MenuButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC2F972FE9ECD000333732 /* MenuButtom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,11 +88,13 @@
 		74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewModel.swift; sourceTree = "<group>"; };
 		74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListViewModel.swift; sourceTree = "<group>"; };
+		74AF6D162FE9E6A70098B7AA /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
 		74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAbilityViewModel.swift; sourceTree = "<group>"; };
 		74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPagerView.swift; sourceTree = "<group>"; };
 		74C236002FB3CB68001B047A /* CustomCellAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellAbility.swift; sourceTree = "<group>"; };
 		74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsPageViewController.swift; sourceTree = "<group>"; };
 		74D200672FC4C21200AB6BCD /* WeaponPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPageViewModel.swift; sourceTree = "<group>"; };
+		74EC2F972FE9ECD000333732 /* MenuButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +179,14 @@
 		74A694A72F9A8CE3006A1BBD /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
+				74EC2F992FE9ECF700333732 /* Components */,
 				7495CD7A2FABCED80058914C /* Utils */,
 				74A8AA172FC0E95200B5B92F /* Models */,
 				74B023892FE1DA1A00051608 /* Services */,
 				74FC5C012FCE128900AC8395 /* Feature */,
 				74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */,
 				74A694AA2F9A8CE3006A1BBD /* SceneDelegate.swift */,
+				74AF6D162FE9E6A70098B7AA /* Valorant Font.ttf */,
 				74A694B42F9A8CEA006A1BBD /* Assets.xcassets */,
 				74A694B92F9A8CEA006A1BBD /* Info.plist */,
 				74A694B12F9A8CE4006A1BBD /* ValorantApp.xcdatamodeld */,
@@ -286,6 +292,14 @@
 				74D200632FC4BFAE00AB6BCD /* WeaponsPageViewController.swift */,
 			);
 			path = WeaponsPage;
+			sourceTree = "<group>";
+		};
+		74EC2F992FE9ECF700333732 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74EC2F972FE9ECD000333732 /* MenuButtom.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		74FC5BFF2FCE121800AC8395 /* Shared */ = {
@@ -423,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A694B52F9A8CEA006A1BBD /* Assets.xcassets in Resources */,
+				74AF6D172FE9E6A80098B7AA /* Valorant Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +464,7 @@
 			files = (
 				74C1B3412FD0A3DD004199DF /* WeaponPagerView.swift in Sources */,
 				74A694DF2F9A8F45006A1BBD /* SelectListView.swift in Sources */,
+				74EC2F982FE9ECD000333732 /* MenuButtom.swift in Sources */,
 				747530652FB4AFAB006BAA28 /* Colors.swift in Sources */,
 				74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */,
 				74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */,

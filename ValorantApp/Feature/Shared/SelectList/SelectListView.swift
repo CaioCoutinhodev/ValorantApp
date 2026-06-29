@@ -30,7 +30,7 @@ class SelectListView: UIView {
         tableView.reloadData()
     }
     
-    private let title: UILabel = {
+    let title: UILabel = {
         let title = UILabel()
         title.font = .systemFont(ofSize: 35)
         title.translatesAutoresizingMaskIntoConstraints = false
@@ -42,6 +42,7 @@ class SelectListView: UIView {
         search.searchTextField.attributedPlaceholder = NSAttributedString(
             string: "pesquisar"
         )
+        search.barTintColor = Utils.AppColors.BackgroundColor
         return search
     }()
     
@@ -119,6 +120,7 @@ extension SelectListView: UITableViewDataSource, UITableViewDelegate {
         let item = items[indexPath.row]
         
         cell.configure(name: item.title, imageUrl: item.icon)
+        cell.backgroundColor = Utils.AppColors.BackgroundColor
         
         return cell
     }

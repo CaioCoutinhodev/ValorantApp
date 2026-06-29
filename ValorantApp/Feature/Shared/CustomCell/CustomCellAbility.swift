@@ -47,7 +47,7 @@ class CustomCellAbility: UIView {
                 return
             }
             self?.imageAbility.image = image.withRenderingMode(.alwaysTemplate)
-            self?.imageAbility.tintColor = .black
+            self?.imageAbility.tintColor = Utils.AppColors.colorAbility
         })
         nameAbility.text = abilityAgent.displayName
     }

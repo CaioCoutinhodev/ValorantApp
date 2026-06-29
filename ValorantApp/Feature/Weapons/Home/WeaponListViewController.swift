@@ -15,8 +15,9 @@ class WeaponListViewController: UIViewController{
         super.viewDidLoad()
         self.view = homeWaponsView
         fetchData()
-        homeWaponsView.backgroundColor = .white
+        homeWaponsView.backgroundColor = Utils.AppColors.BackgroundColor
         homeWaponsView.delegate = self
+        navigationItem.backButtonTitle = homeWaponsView.title.text
     }
     
     private func fetchData() {

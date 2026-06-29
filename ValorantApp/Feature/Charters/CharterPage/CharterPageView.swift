@@ -23,7 +23,6 @@ class CharterPageView: UIView {
     struct buttomAbilities {
         var buttom: UIButton
         var lablel: UILabel
-        
     }
     
     var backgroundImageAgent: UIView = {

@@ -49,20 +49,11 @@ class WeaponsPageView: UIView {
         return text
     }()
     
-    var buttomSkins: UIButton = {
-        var butom = UIButton()
-        butom.setTitle("Skins", for: .normal)
-        butom.backgroundColor = UIColor(
-            red: 255.0 / 255.0,
-            green: 70.0 / 255.0,
-            blue: 84.0 / 255.0,
-            alpha: 1.0
-        )
-        butom.titleLabel?.font = .systemFont(ofSize: 24)
-        butom.setTitleColor(.black, for: .normal)
-        butom.layer.borderWidth = 1
-        butom.translatesAutoresizingMaskIntoConstraints = false
-        return butom
+    var buttomSkins: MenuButtom = {
+        var button = MenuButtom()
+        button.setTitle("Skins", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     init() {
