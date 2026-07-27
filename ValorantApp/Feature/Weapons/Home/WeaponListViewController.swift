@@ -14,6 +14,7 @@ class WeaponListViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = homeWaponsView
+        homeWaponsView.favoriteKey = .weapons
         fetchData()
         homeWaponsView.backgroundColor = Utils.AppColors.BackgroundColor
         homeWaponsView.delegate = self
@@ -37,6 +38,11 @@ class WeaponListViewController: UIViewController{
     }
 }
 extension WeaponListViewController: SelectListViewDelegate  {
+    func favorite(id: String) {
+        FavoriteService.changeState(id: id, key: .weapons)
+        fetchData()
+    }
+    
     func didSelectAgent(id: String) {
         let vc = WeaponsPageViewController(id: id)
         navigationController?.pushViewController(vc, animated: true)

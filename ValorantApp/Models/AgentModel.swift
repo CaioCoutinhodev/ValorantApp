@@ -1,5 +1,5 @@
 //
-//  CharterModel.swift
+//  CharacterModel.swift
 //  ProjectMarvel
 //
 //  Created by Jonatas Coutinho de Faria on 13/04/26.

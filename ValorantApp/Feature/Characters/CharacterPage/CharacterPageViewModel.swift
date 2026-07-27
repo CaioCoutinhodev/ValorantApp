@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharterPageViewModel {
+struct CharacterPageViewModel {
     
     var agent: CompleteAgentModel
     

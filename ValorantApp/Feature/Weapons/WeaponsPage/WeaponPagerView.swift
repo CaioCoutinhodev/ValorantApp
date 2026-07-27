@@ -1,6 +1,6 @@
 
 //
-//  CharterPageView.swift
+//  CharacterPageView.swift
 //  ValorantApp
 //
 //  Created by Jonatas Coutinho de Faria on 29/04/26.
@@ -9,7 +9,7 @@
 import UIKit
 
 protocol WeaponsPageViewDelegate: AnyObject {
-    func navigationCharterPageView()
+    func navigationCharacterPageView()
 }
 
 class WeaponsPageView: UIView {
@@ -67,7 +67,7 @@ class WeaponsPageView: UIView {
     }
     
     @objc func didTapButtonSkins() {
-        delegate?.navigationCharterPageView()
+        delegate?.navigationCharacterPageView()
     }
     
     private func configuration() {

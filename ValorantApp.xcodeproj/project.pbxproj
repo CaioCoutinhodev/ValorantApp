@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		747530652FB4AFAB006BAA28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747530642FB4AFAB006BAA28 /* Colors.swift */; };
 		748603092FBB92790094B29D /* ModalAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748603082FBB92790094B29D /* ModalAbilityView.swift */; };
-		748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B649C2FA27F6000A534FC /* CharterPageView.swift */; };
-		748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */; };
+		748B649D2FA27F6000A534FC /* CharacterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B649C2FA27F6000A534FC /* CharacterPageView.swift */; };
+		748B64A12FA27FCB00A534FC /* CharacterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748B64A02FA27FCB00A534FC /* CharacterPageViewController.swift */; };
 		7495CD792FABCED20058914C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495CD782FABCED20058914C /* Utils.swift */; };
 		74987C2B2FD740BB005ADF70 /* SkinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74987C2A2FD740BB005ADF70 /* SkinListViewController.swift */; };
 		74A694A92F9A8CE3006A1BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A694A82F9A8CE3006A1BBD /* AppDelegate.swift */; };
@@ -29,10 +29,12 @@
 		74A8AA152FC0E78400B5B92F /* WeaponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA142FC0E78400B5B92F /* WeaponListViewController.swift */; };
 		74A8AA192FC0E97300B5B92F /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA182FC0E97300B5B92F /* WeaponModel.swift */; };
 		74A8AA1B2FC0EBDF00B5B92F /* WeaponListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8AA1A2FC0EBDF00B5B92F /* WeaponListViewModel.swift */; };
-		74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */; };
+		74ADA8AC2FF6E4E700A97DA8 /* FavoriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADA8AB2FF6E4E700A97DA8 /* FavoriteService.swift */; };
+		74AE94802FAA5EFE00DAC537 /* CharacterPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE947F2FAA5EFE00DAC537 /* CharacterPageViewModel.swift */; };
 		74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */; };
 		74AED7D42F9FEF7600A0AA98 /* SelectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */; };
 		74AF6D172FE9E6A80098B7AA /* Valorant Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74AF6D162FE9E6A70098B7AA /* Valorant Font.ttf */; };
+		74B0E6633006D151006549AC /* ButtomFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E6623006D151006549AC /* ButtomFavorite.swift */; };
 		74BD0FE52FBF83E600237250 /* ModalAbilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */; };
 		74C1B3412FD0A3DD004199DF /* WeaponPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */; };
 		74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C236002FB3CB68001B047A /* CustomCellAbility.swift */; };
@@ -61,8 +63,8 @@
 /* Begin PBXFileReference section */
 		747530642FB4AFAB006BAA28 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		748603082FBB92790094B29D /* ModalAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAbilityView.swift; sourceTree = "<group>"; };
-		748B649C2FA27F6000A534FC /* CharterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageView.swift; sourceTree = "<group>"; };
-		748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewController.swift; sourceTree = "<group>"; };
+		748B649C2FA27F6000A534FC /* CharacterPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPageView.swift; sourceTree = "<group>"; };
+		748B64A02FA27FCB00A534FC /* CharacterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPageViewController.swift; sourceTree = "<group>"; };
 		7495CD782FABCED20058914C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		74987C2A2FD740BB005ADF70 /* SkinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinListViewController.swift; sourceTree = "<group>"; };
 		74A694A52F9A8CE3006A1BBD /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,10 +87,12 @@
 		74A8AA142FC0E78400B5B92F /* WeaponListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListViewController.swift; sourceTree = "<group>"; };
 		74A8AA182FC0E97300B5B92F /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
 		74A8AA1A2FC0EBDF00B5B92F /* WeaponListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListViewModel.swift; sourceTree = "<group>"; };
-		74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharterPageViewModel.swift; sourceTree = "<group>"; };
+		74ADA8AB2FF6E4E700A97DA8 /* FavoriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteService.swift; sourceTree = "<group>"; };
+		74AE947F2FAA5EFE00DAC537 /* CharacterPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPageViewModel.swift; sourceTree = "<group>"; };
 		74AED7D12F9FEB0C00A0AA98 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		74AED7D32F9FEF7600A0AA98 /* SelectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListViewModel.swift; sourceTree = "<group>"; };
 		74AF6D162FE9E6A70098B7AA /* Valorant Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Valorant Font.ttf"; sourceTree = "<group>"; };
+		74B0E6623006D151006549AC /* ButtomFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomFavorite.swift; sourceTree = "<group>"; };
 		74BD0FE42FBF83E600237250 /* ModalAbilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAbilityViewModel.swift; sourceTree = "<group>"; };
 		74C1B3402FD0A3DD004199DF /* WeaponPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponPagerView.swift; sourceTree = "<group>"; };
 		74C236002FB3CB68001B047A /* CustomCellAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellAbility.swift; sourceTree = "<group>"; };
@@ -130,14 +134,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		748B649F2FA27F8400A534FC /* CharterPage */ = {
+		748B649F2FA27F8400A534FC /* CharacterPage */ = {
 			isa = PBXGroup;
 			children = (
-				74AE947F2FAA5EFE00DAC537 /* CharterPageViewModel.swift */,
-				748B649C2FA27F6000A534FC /* CharterPageView.swift */,
-				748B64A02FA27FCB00A534FC /* CharterPageViewController.swift */,
+				74AE947F2FAA5EFE00DAC537 /* CharacterPageViewModel.swift */,
+				748B649C2FA27F6000A534FC /* CharacterPageView.swift */,
+				748B64A02FA27FCB00A534FC /* CharacterPageViewController.swift */,
 			);
-			path = CharterPage;
+			path = CharacterPage;
 			sourceTree = "<group>";
 		};
 		7495CD7A2FABCED80058914C /* Utils */ = {
@@ -211,15 +215,15 @@
 			path = ValorantAppUITests;
 			sourceTree = "<group>";
 		};
-		74A694DD2F9A8F01006A1BBD /* Charters */ = {
+		74A694DD2F9A8F01006A1BBD /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				747530642FB4AFAB006BAA28 /* Colors.swift */,
 				74AE94812FAA5F0700DAC537 /* ModalAbility */,
 				748B649E2FA27F6D00A534FC /* Home */,
-				748B649F2FA27F8400A534FC /* CharterPage */,
-				747530642FB4AFAB006BAA28 /* Colors.swift */,
+				748B649F2FA27F8400A534FC /* CharacterPage */,
 			);
-			path = Charters;
+			path = Characters;
 			sourceTree = "<group>";
 		};
 		74A8AA0B2FC0D92E00B5B92F /* Home */ = {
@@ -270,6 +274,7 @@
 		74B023892FE1DA1A00051608 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				74ADA8AB2FF6E4E700A97DA8 /* FavoriteService.swift */,
 				74A694E22F9A9610006A1BBD /* ValorantService.swift */,
 			);
 			path = Services;
@@ -298,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				74EC2F972FE9ECD000333732 /* MenuButtom.swift */,
+				74B0E6623006D151006549AC /* ButtomFavorite.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -327,7 +333,7 @@
 				74A8AA112FC0E72B00B5B92F /* Weapons */,
 				74A8AA0B2FC0D92E00B5B92F /* Home */,
 				74987C292FD74087005ADF70 /* Skins */,
-				74A694DD2F9A8F01006A1BBD /* Charters */,
+				74A694DD2F9A8F01006A1BBD /* Characters */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -466,7 +472,7 @@
 				74A694DF2F9A8F45006A1BBD /* SelectListView.swift in Sources */,
 				74EC2F982FE9ECD000333732 /* MenuButtom.swift in Sources */,
 				747530652FB4AFAB006BAA28 /* Colors.swift in Sources */,
-				74AE94802FAA5EFE00DAC537 /* CharterPageViewModel.swift in Sources */,
+				74AE94802FAA5EFE00DAC537 /* CharacterPageViewModel.swift in Sources */,
 				74A694E12F9A9257006A1BBD /* AgentModel.swift in Sources */,
 				74A694E32F9A9610006A1BBD /* ValorantService.swift in Sources */,
 				748603092FBB92790094B29D /* ModalAbilityView.swift in Sources */,
@@ -479,15 +485,17 @@
 				74AED7D22F9FEB0C00A0AA98 /* CustomCell.swift in Sources */,
 				74A694AB2F9A8CE3006A1BBD /* SceneDelegate.swift in Sources */,
 				74AED7D42F9FEF7600A0AA98 /* SelectListViewModel.swift in Sources */,
+				74ADA8AC2FF6E4E700A97DA8 /* FavoriteService.swift in Sources */,
 				74C236012FB3CB68001B047A /* CustomCellAbility.swift in Sources */,
-				748B649D2FA27F6000A534FC /* CharterPageView.swift in Sources */,
+				748B649D2FA27F6000A534FC /* CharacterPageView.swift in Sources */,
 				74987C2B2FD740BB005ADF70 /* SkinListViewController.swift in Sources */,
 				74BD0FE52FBF83E600237250 /* ModalAbilityViewModel.swift in Sources */,
 				74A8AA0E2FC0D9BF00B5B92F /* HomePageView.swift in Sources */,
 				74D200682FC4C21200AB6BCD /* WeaponPageViewModel.swift in Sources */,
 				74A8AA1B2FC0EBDF00B5B92F /* WeaponListViewModel.swift in Sources */,
 				74A8AA152FC0E78400B5B92F /* WeaponListViewController.swift in Sources */,
-				748B64A12FA27FCB00A534FC /* CharterPageViewController.swift in Sources */,
+				748B64A12FA27FCB00A534FC /* CharacterPageViewController.swift in Sources */,
+				74B0E6633006D151006549AC /* ButtomFavorite.swift in Sources */,
 				74A8AA102FC0D9D400B5B92F /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

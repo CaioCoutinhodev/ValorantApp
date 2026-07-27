@@ -1,5 +1,5 @@
 //
-//  CharterPageViewController.swift
+//  CharacterPageViewController.swift
 //  ValorantApp
 //
 //  Created by Jonatas Coutinho de Faria on 29/04/26.
@@ -7,17 +7,17 @@
 
 import UIKit
 
-class CharterPageViewController: UIViewController {
+class CharacterPageViewController: UIViewController {
     
     
     
-    var charterPageView = CharterPageView()
+    var characterPageView = CharacterPageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = charterPageView
-        charterPageView.backgroundColor = Utils.AppColors.BackgroundColor
-        charterPageView.delegate = self
+        self.view = characterPageView
+        characterPageView.backgroundColor = Utils.AppColors.BackgroundColor
+        characterPageView.delegate = self
         
     }
     
@@ -33,8 +33,8 @@ class CharterPageViewController: UIViewController {
             case .success(let agent):
                 
                 DispatchQueue.main.async {
-                    let viewModel = CharterPageViewModel(model: agent)
-                    self?.charterPageView.viewModel = viewModel
+                    let viewModel = CharacterPageViewModel(model: agent)
+                    self?.characterPageView.viewModel = viewModel
                     self?.navigationItem.backButtonTitle = agent.displayName
                 }
                 
@@ -51,7 +51,7 @@ class CharterPageViewController: UIViewController {
 
 
 }
-extension CharterPageViewController : CharterPageViewDelegate {
+extension CharacterPageViewController : CharacterPageViewDelegate {
     func didSelectAbility(ability: AbilitiesModel) {
         var viewModel = ModalAbilityViewModel(model: ability)
         let abilityViewController = ModalAbilityView(viewModel: viewModel)

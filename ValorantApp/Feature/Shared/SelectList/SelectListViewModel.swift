@@ -19,14 +19,16 @@ struct SelectListViewModel {
     var canSelectList: Bool
     
     init(agents: [AgentModel]) {
-        listItems = agents.map({ agent in
-            return SelectListItem(id: agent.uuid,
-                                  icon: agent.displayIcon,
-                                  title: agent.displayName)
-            
-        })
-        
+        listItems = agents.map {
+            SelectListItem(
+                id: $0.uuid,
+                icon: $0.displayIcon,
+                title: $0.displayName
+            )
+        }
+
         canSelectList = true
+        sortFavorites(key: .characters)
     }
     
     init(weapons: [WeaponModel]) {
@@ -37,6 +39,7 @@ struct SelectListViewModel {
         })
         
         canSelectList = true
+        sortFavorites(key: .weapons)
     }
     
     init(skins: [SkinModel]) {
@@ -58,6 +61,21 @@ struct SelectListViewModel {
         }
         
         canSelectList = false
+        sortFavorites(key: .skins)
+    }
+    mutating func sortFavorites(key: FavoriteKey) {
+        let favorites = FavoriteService.favorites(key: key)
+
+        listItems.sort { first, second in
+            let firstFavorite = favorites.contains(first.id)
+            let secondFavorite = favorites.contains(second.id)
+
+            if firstFavorite == secondFavorite {
+                return first.title < second.title
+            }
+
+            return firstFavorite
+        }
     }
     
 }

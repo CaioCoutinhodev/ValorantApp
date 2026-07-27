@@ -26,7 +26,7 @@ extension HomePageViewController: HomePageViewDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-     func navigationCharterPageView() {
+     func navigationCharacterPageView() {
         let vc = AgentListViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
