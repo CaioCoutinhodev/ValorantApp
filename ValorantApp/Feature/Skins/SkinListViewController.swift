@@ -9,21 +9,23 @@ import UIKit
 
 class SkinListViewController: UITableViewController {
     
+    private var skins: [SkinModel]
+    
     var skinView = SelectListView(title: "Skins")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = skinView
-        
+        skinView.favoriteKey = .skins
         skinView.backgroundColor = Utils.AppColors.BackgroundColor
         skinView.delegate = self
     }
     
     init(skins: [SkinModel]) {
+        self.skins = skins
         super.init(style: .plain)
-       
-        let viewModel = SelectListViewModel(skins: skins)
-        skinView.viewModel = viewModel
+
+        skinView.viewModel = SelectListViewModel(skins: skins)
     }
     
     required init?(coder: NSCoder) {
@@ -32,6 +34,13 @@ class SkinListViewController: UITableViewController {
 }
 
 extension SkinListViewController: SelectListViewDelegate  {
+    
+    func favorite(id: String) {
+        FavoriteService.changeState(id: id, key: .skins)
+
+        skinView.viewModel = SelectListViewModel(skins: skins)
+    }
+    
     func didSelectAgent(id: String) {
         // TO DO
     }

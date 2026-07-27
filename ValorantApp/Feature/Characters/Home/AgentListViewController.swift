@@ -15,6 +15,7 @@ class AgentListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view = valorantView
+        valorantView.favoriteKey = .characters
         valorantView.backgroundColor = Utils.AppColors.BackgroundColor
         fetchData()
         valorantView.delegate = self
@@ -39,8 +40,13 @@ class AgentListViewController: UIViewController {
         }
 }
 extension AgentListViewController: SelectListViewDelegate{
+    func favorite(id: String) {
+        FavoriteService.changeState(id: id, key: .characters)
+        fetchData()
+    }
+    
     func didSelectAgent(id: String){
-        let vc = CharterPageViewController(id: id)
+        let vc = CharacterPageViewController(id: id)
         navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -7,10 +7,10 @@
 
 struct Gradient {
     
-    var viewModel: CharterPageViewModel?
+    var viewModel: CharacterPageViewModel?
     var colors: [String]
     
-    init(viewModel: CharterPageViewModel?) {
+    init(viewModel: CharacterPageViewModel?) {
         self.viewModel = viewModel
         self.colors = viewModel?.agent.backgroundGradientColors ?? []
     }

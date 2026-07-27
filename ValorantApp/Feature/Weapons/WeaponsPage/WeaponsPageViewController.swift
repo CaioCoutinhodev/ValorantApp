@@ -49,7 +49,7 @@ class WeaponsPageViewController: UIViewController {
     }
 }
 extension WeaponsPageViewController: WeaponsPageViewDelegate {
-    func navigationCharterPageView() {
+    func navigationCharacterPageView() {
         let vc = SkinListViewController(skins: skins)
         navigationController?.pushViewController(vc, animated: true)
     }

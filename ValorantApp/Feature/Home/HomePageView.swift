@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomePageViewDelegate: AnyObject {
-    func navigationCharterPageView()
+    func navigationCharacterPageView()
     func navigationWeaponsPageView()
 }
 
@@ -26,7 +26,7 @@ class HomePageView: UIView {
         return text
     }()
     
-    var chartersButtom: MenuButtom = {
+    var charactersButtom: MenuButtom = {
         var button = MenuButtom()
         button.setTitle("Personagens", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -43,13 +43,13 @@ class HomePageView: UIView {
     init() {
         super.init(frame: .zero)
         setupView()
-        chartersButtom.addTarget(self, action:#selector(didTapButtonCharter) , for: .touchUpInside)
+        charactersButtom.addTarget(self, action:#selector(didTapButtonCharacter) , for: .touchUpInside)
         weaponsButtom.addTarget(self, action: #selector(didTapButtonWeapons), for: .touchUpInside)
     }
     
-    @objc func didTapButtonCharter() {
+    @objc func didTapButtonCharacter() {
 
-        delegate?.navigationCharterPageView()
+        delegate?.navigationCharacterPageView()
     }
     
     @objc func didTapButtonWeapons() {
@@ -62,7 +62,7 @@ class HomePageView: UIView {
     
     private func setupView() {
         addSubview(titleHome)
-        addSubview(chartersButtom)
+        addSubview(charactersButtom)
         addSubview(weaponsButtom)
         
         NSLayoutConstraint.activate([
@@ -70,12 +70,12 @@ class HomePageView: UIView {
             titleHome.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 25),
             titleHome.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
             
-            chartersButtom.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),
-            chartersButtom.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 20),
-            chartersButtom.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -20),
+            charactersButtom.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),
+            charactersButtom.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 20),
+            charactersButtom.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -20),
            
             
-            weaponsButtom.topAnchor.constraint(equalTo: chartersButtom.bottomAnchor, constant: 20),
+            weaponsButtom.topAnchor.constraint(equalTo: charactersButtom.bottomAnchor, constant: 20),
             weaponsButtom.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 20),
             weaponsButtom.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -20),
 

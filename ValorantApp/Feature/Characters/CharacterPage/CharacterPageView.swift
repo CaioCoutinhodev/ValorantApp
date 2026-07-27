@@ -1,5 +1,5 @@
 //
-//  CharterPageView.swift
+//  CharacterPageView.swift
 //  ValorantApp
 //
 //  Created by Jonatas Coutinho de Faria on 29/04/26.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-protocol CharterPageViewDelegate: AnyObject {
+protocol CharacterPageViewDelegate: AnyObject {
     func didSelectAbility(ability: AbilitiesModel)
 }
 
-class CharterPageView: UIView {
+class CharacterPageView: UIView {
     
-    var viewModel: CharterPageViewModel? {
+    var viewModel: CharacterPageViewModel? {
         didSet {
             setupData()
         }
     }
-    weak var delegate: CharterPageViewDelegate?
+    weak var delegate: CharacterPageViewDelegate?
     
     struct buttomAbilities {
         var buttom: UIButton
@@ -48,14 +48,14 @@ class CharterPageView: UIView {
         return image
     }()
     
-    var nameCharter: UILabel = {
+    var nameCharacter: UILabel = {
         var text = UILabel()
         text.text = text.text
         text.font = UIFont.boldSystemFont(ofSize: 27)
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
-    var descriptionCharter: UILabel = {
+    var descriptionCharacter: UILabel = {
         var text = UILabel()
         text.text = text.text
         text.font = .systemFont(ofSize: 20)
@@ -139,8 +139,8 @@ class CharterPageView: UIView {
             self?.agentImageView.image = image
         })
     
-        nameCharter.text = viewModel.agent.displayName
-        descriptionCharter.text = viewModel.agent.description
+        nameCharacter.text = viewModel.agent.displayName
+        descriptionCharacter.text = viewModel.agent.description
         abilities = viewModel.agent.abilities
         
         
@@ -160,8 +160,8 @@ class CharterPageView: UIView {
         sendSubviewToBack(backgroundImage)
         addSubview(backgroundImageAgent)
         addSubview(agentImageView)
-        addSubview(nameCharter)
-        addSubview(descriptionCharter)
+        addSubview(nameCharacter)
+        addSubview(descriptionCharacter)
         sendSubviewToBack(agentImageView)
         bringSubviewToFront(agentImageView)
         addSubview(textAbilities)
@@ -187,15 +187,15 @@ class CharterPageView: UIView {
             agentImageView.bottomAnchor.constraint(equalTo: backgroundImageAgent.bottomAnchor, constant: -8),
             
 
-            nameCharter.topAnchor.constraint(equalTo: backgroundImageAgent.bottomAnchor, constant: 19),
-            nameCharter.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 15),
-            nameCharter.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -15),
+            nameCharacter.topAnchor.constraint(equalTo: backgroundImageAgent.bottomAnchor, constant: 19),
+            nameCharacter.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 15),
+            nameCharacter.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -15),
 
-            descriptionCharter.topAnchor.constraint(equalTo: nameCharter.bottomAnchor, constant: 15),
-            descriptionCharter.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 15),
-            descriptionCharter.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -15),
+            descriptionCharacter.topAnchor.constraint(equalTo: nameCharacter.bottomAnchor, constant: 15),
+            descriptionCharacter.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 15),
+            descriptionCharacter.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -15),
             
-            textAbilities.topAnchor.constraint(equalTo: descriptionCharter.bottomAnchor, constant: 15),
+            textAbilities.topAnchor.constraint(equalTo: descriptionCharacter.bottomAnchor, constant: 15),
             textAbilities.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 15),
             
             stackView.topAnchor.constraint(equalTo: textAbilities.bottomAnchor, constant: 10),

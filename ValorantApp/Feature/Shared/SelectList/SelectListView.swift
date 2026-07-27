@@ -9,9 +9,12 @@ import UIKit
 
 protocol SelectListViewDelegate: AnyObject {
     func didSelectAgent(id: String)
+    func favorite(id: String)
 }
 
 class SelectListView: UIView {
+    
+    var favoriteKey: FavoriteKey?
     
     var viewModel: SelectListViewModel? {
         didSet {
@@ -25,6 +28,7 @@ class SelectListView: UIView {
         guard let viewModel = viewModel else {
             return
         }
+        
         
         tableView.allowsSelection = viewModel.canSelectList
         tableView.reloadData()
@@ -52,11 +56,6 @@ class SelectListView: UIView {
     
     var filtered: [SelectListItem] = []
 
-    func update(with Item: [SelectListItem]) {
-        self.filtered = Item
-        tableView.reloadData()
-    }
-    
     private func setupTableView(){
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -119,7 +118,18 @@ extension SelectListView: UITableViewDataSource, UITableViewDelegate {
         
         let item = items[indexPath.row]
         
-        cell.configure(name: item.title, imageUrl: item.icon)
+        var isFavorite = false
+        
+        if let key = favoriteKey {
+            isFavorite = FavoriteService.favorites(key: key).contains(item.id)
+        }
+        
+        cell.configure(
+            name: item.title,
+            imageUrl: item.icon,
+            isFavorite: isFavorite
+        )
+        cell.delegate = self
         cell.backgroundColor = Utils.AppColors.BackgroundColor
         
         return cell
@@ -137,27 +147,92 @@ extension SelectListView: UITableViewDataSource, UITableViewDelegate {
         
         delegate?.didSelectAgent(id: ItemSelected[indexPath.row].id)
     }
+    
+    func tableView(_ tableView: UITableView,
+                   leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+    -> UISwipeActionsConfiguration? {
+        
+        let items = isSearched ? filtered : (viewModel?.listItems ?? [])
+        
+        guard indexPath.row < items.count else {
+            return nil
+        }
+        
+        let item = items[indexPath.row]
+        
+        var isFavorite = false
+        
+        if let key = favoriteKey {
+            isFavorite = FavoriteService.favorites(key: key).contains(item.id)
+        }
+        
+        let favoriteAction = UIContextualAction(
+            style: .normal,
+            title: isFavorite ? "Remover" : "Favoritar"
+        ) { [weak self] _, _, completion in
+            
+            guard let self = self else {
+                completion(false)
+                return
+            }
+            
+            self.delegate?.favorite(id: item.id)
+            
+            completion(true)
+        }
+        
+        favoriteAction.backgroundColor = .systemYellow
+        favoriteAction.image = UIImage(systemName: isFavorite ? "star.slash.fill" : "star.fill")
+        
+        return UISwipeActionsConfiguration(actions: [favoriteAction])
+    }
 }
 
 extension SelectListView: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        let ItemFilter = viewModel?.listItems ?? []
+        let items = viewModel?.listItems ?? []
         
         if searchText.trimmingCharacters(in: .whitespaces).isEmpty {
             isSearched = false
-            filtered = ItemFilter
+            filtered = items
         } else {
             isSearched = true
             
-            filtered = ItemFilter.filter { agent in
-                agent.title
+            filtered = items.filter { item in
+                item.title
                     .lowercased()
                     .contains(searchText.lowercased())
             }
             
+            if let key = favoriteKey {
+                let favorites = FavoriteService.favorites(key: key)
+                
+                filtered.sort { first, second in
+                    let firstFavorite = favorites.contains(first.id)
+                    let secondFavorite = favorites.contains(second.id)
+                    
+                    if firstFavorite == secondFavorite {
+                        return first.title < second.title
+                    }
+                    
+                    return firstFavorite
+                }
+            }
         }
+        
         tableView.reloadData()
+    }
+}
+extension SelectListView: CustomCellDelegate {
+
+    func didTapFavorite(in cell: CustomCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+
+        let items = isSearched ? filtered : (viewModel?.listItems ?? [])
+        let item = items[indexPath.row]
+
+        delegate?.favorite(id: item.id)
     }
 }
